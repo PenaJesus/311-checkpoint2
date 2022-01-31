@@ -1,0 +1,27 @@
+{
+  "name": "311-checkpoint2",
+  "version": "1.0.0",
+  "description": "2nd checkpoint for 311",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PenaJesus/311-checkpoint2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PenaJesus/311-checkpoint2/issues"
+  },
+  "homepage": "https://github.com/PenaJesus/311-checkpoint2#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>311 Checkpoint</title>
+</head>
+<body>
+  <h1>Recipe Guide</h1>
+  <div>
+    <h2>GET /recipes</h2>
+    <p>This route return a list of recipes that contain a recipeID, name, description, cooking time and the ID of the user that posted the recipe </p>
+  </div>
+
+  <div>
+    <h2>GET /recipes/:id</h2>
+    <p>This route returns a single recipe object.<br> It allows the user to see a certain recipe by entering its preticular ID in the path. This object also contains the name,description, cooking time and the ID of the user that adds the recipe
+    </p>
+  </div>
+
+  <div>
+    <h2>POST /recipes</h2>
+    <p>This route allows the user to add a recipe to our database.<br>
+    it utilizes the body of our request to create a new recipe object that contains everything our recipes should.<br>
+    The body of our request should contain the name, description, and cooking time. When posted this object should add the ID of the user that has created the recipe. </p>
+  </div>
+
+  <div>
+    <h2>PUT /recipes/:id</h2>
+    <p>This route allows our user to edit the recipe they have added. <br>
+      When this route is called you will be able to modify the values of the recipe with the specified ID. The user utilizes the body of the request to update the name, description, or cooking time. </p>
+  </div>
+
+  <div>
+    <h2>DELETE /recipes/:id</h2>
+    <p>This route allows you to delete the recipe with the specified ID<br> It will allow the user to delete a recipe from our database using the ID in the path paramater</p>
+  </div>
+
+  <div>
+    <h2> /signup</h2>
+    <p>This route allows the user to sign up and adds their username and password to our database.<br> DONT worry, once the password is passed into our database we hash the password that way in cases of a data breach we keep your information secure. <br>
+    If the user leaves out their username or password it will prompt a message that the empty field is required.</p>
+  </div>
+
+  <div>
+    <h2>/login</h2>
+    <p>This route will allow the user to login to our application and provides them with a token that will verify the user. Once verified the user will have access to special actions of our application <br> If the user does not already exist in our database it will prompt a message that we could not find said user. </p>
+  </div>
+
+  <div>
+    <h2>GET /categories</h2>
+    <p>This route will allow the user to see the different categories our application holds<br> Each recipe will be applied a category tag that will then allow the user to see recipes that belong to a certain category. <br> Difficult recipes, Easy recipes, or the culture the recipe originates from </p>
+  </div>
+
+  <div>
+    <h2>GET /ingredient</h2>
+    <p>This route allows the user to see the list of recipes we already have. This will contain the name and a breif description of each ingredient.</p>
+  </div>
+
+  <div>
+    <h2>POST /ingredient</h2>
+    <p>This route allows the user to add an ingredient to our database.<br> It utilizes the body of the request to create and ingredient object that will contain the name and breif description. This ingredient will then be visible to other users when using the "GET /ingredient" route.  </p>
+  </div>
+</body>
+</html>
