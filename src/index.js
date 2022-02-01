@@ -17,6 +17,10 @@ let routes = require("./routes")
 //allows us to use static file...our "public" file
 app.use(express.static("./public"));
 
+app.get("/", function(req,res){
+  res.send("server is up")
+})
+
 //establishes what local port we will be using
 let PORT = process.env.PORT || 8000;
 

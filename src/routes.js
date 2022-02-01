@@ -11,6 +11,7 @@ let auth = require("./auth")
 //gets all recipes using our imported controller
 //specify a query param that only displays the recipes a user liked
 //param that specifies a category
+
 router.post("/signup", auth.signup) //works
 
 router.post("/login", auth.login) //works
