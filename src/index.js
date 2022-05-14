@@ -7,6 +7,7 @@ let cors = require("cors");
 let routes = require("./routes");
 
 
+let PORT = process.env.PORT || 8000;
 //stores "express" in app, allowing us to use variable
 let app = express();
 
@@ -31,7 +32,6 @@ app.use(routes);
 // });
 
 //establishes what local port we will be using
-let PORT = process.env.PORT || 8000;
 
 //allows our app to "listen" for incoming request
 app.listen(PORT, function () {
