@@ -1,5 +1,10 @@
 .env
 
 node_modules
+<<<<<<< HEAD
 client/
 wireframes/
+=======
+client
+wireframes
+>>>>>>> 4ce9bfce82cc2bbc5597a3772e67c538cbdb5b45

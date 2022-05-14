@@ -94,6 +94,8 @@ let params = []
 
 params.push(userID)
 params.push(recipeID)
+
+
 db.query(sql, params, function(error, rows){
   if(error){
     console.log("Could not like the recipe", error)

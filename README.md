@@ -59,3 +59,20 @@ last day of class for discussion. You do not need to show your routes all workin
 implement at least 75% of the routes that you think you will need for your design
 * COMPLETED 83% of routes
 
+*********
+Core Functionality
+
+1: User should be able to create, update, and delete a recipe along with getting a list of other created recipes. Only the user that published the recipe is allowed to delete/update the recipe.
+
+2: User should be able to get a list of ingredients along with deleting, updating, and adding ingredients. The database will hold repeat ingredients in case a user adds an ingredient that is already in DB...enhance ingredient table if we want to have an ingredient page
+
+3: User should be able to get a list of categories to help find a certain recipe. Filtered by category tags from DB
+
+4: user should be able to login and sign up for the application
+
+5: user should be able to search for recipes. Searching by name of ingredient. If searched chicken then chicken recipes should pop up
+
+FEEDBACK
+
+For the search feature think of maybe starting by searching with recipe name for simplicity. 
+
