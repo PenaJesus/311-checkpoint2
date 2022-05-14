@@ -30,13 +30,13 @@ router.put("/recipes/:id", auth.checkJWT, controller.updateRecipe); //works
 //deletes the recipe with given id
 router.delete("/recipes/:id", auth.checkJWT, controller.deleteRecipe) //works
 
-
+//*****search for recipe using post method. returning recipe based on content of search ("/recipes/search", controller.searchRecipe)
 
 //adds the recipe the user liked to the database
-// router.post("/recipes/liked/:userID/:recipeID", auth.checkJWT, controller.likedRecipe)
+// router.post("/recipes/liked/:recipeID", auth.checkJWT, controller.likedRecipe)
 
 //displays the categories
-router.get("/categories", controller.getCategories)//working?
+router.get("/categories", controller.getCategories)//working
 
 //allows an admin to add categories **MAYBE
 // router.post("/categories", auths.CheckJWT, auths.checkAdmin, controller.addCategory)
@@ -49,9 +49,9 @@ router.post("/ingredient", auth.checkJWT, controller.addIngredient) //works
 router.get("/ingredient",auth.checkJWT, controller.getIngredient) //works
 
 //allows the user to remove the like from a recipe by its id
-// router.delete("/recipes/liked/:id", auth.checkJWT, controller.removeLike)
+// router.delete("/recipes/liked/:recipeID", auth.checkJWT, controller.removeLike)
 
-
+//*****search is normally a post
 
 
 
